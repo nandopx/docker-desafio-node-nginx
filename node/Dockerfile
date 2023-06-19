@@ -13,6 +13,8 @@ RUN npm install express --save
 RUN npm install mysql --save
 RUN npm install gerador-nome --save
 
-COPY index.js .
+COPY . .
 
 EXPOSE 3000
+
+CMD [ "node", "index.js" ]
